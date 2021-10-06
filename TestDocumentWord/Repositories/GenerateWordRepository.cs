@@ -43,6 +43,8 @@ namespace TestDocumentWord.Repositories
                 }
                 byte[] byteArray = File.ReadAllBytes(filepath);
                 string base64 = Convert.ToBase64String(byteArray);
+                //DeleteFileCreated 
+                //File.Delete(filepath);
                 response.Data = base64;
             }
             catch(Exception e)
