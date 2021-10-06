@@ -34,6 +34,7 @@ namespace TestDocumentWord
             });
 
             services.AddTransient<IGenerateWordRepository, GenerateWordRepository>();
+            services.AddTransient<IGenerateWordNPOIRepository, GenerateWordNPOIRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
