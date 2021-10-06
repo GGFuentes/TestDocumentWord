@@ -14,10 +14,10 @@ namespace TestDocumentWord.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class GenerateWordControllerNPOI : ControllerBase
+    public class GenerateWordNPOIController : ControllerBase
     {
         private readonly IGenerateWordNPOIRepository _generateWordNPOIRepository;
-        public GenerateWordControllerNPOI(IGenerateWordNPOIRepository generateWordNPOIRepository)
+        public GenerateWordNPOIController(IGenerateWordNPOIRepository generateWordNPOIRepository)
         {
             _generateWordNPOIRepository = generateWordNPOIRepository;
         }
